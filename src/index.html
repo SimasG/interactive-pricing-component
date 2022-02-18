@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="/dist/styles.css" rel="stylesheet" />
+
+    <title>Interactive pricing component</title>
+  </head>
+  <body class="bg-white">
+    <hero>
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </hero>
+    <main>
+      <section id="slider-container">
+        <h3>Pageviews</h3>
+        <div id="slider"></div>
+        <h1>$16/<span>month</span></h1>
+      </section>
+      <section id="billing-container">
+        <span>Monthly Billing</span>
+        <button id="billing-button"></button>
+        <span>Yearly Billing</span>
+        <span> -25%</span>
+        <span>25% discount</span>
+      </section>
+      <section id="benefits-container">
+        <ul>
+          <li>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="449">
+                <path
+                  fill="#F1F5FE"
+                  fill-rule="evenodd"
+                  d="M0 0h1440v449H191.5C85.737 449 0 363.263 0 257.5V0z"
+                />
+              </svg>
+            </div>
+            <p>Unlimited websites</p>
+          </li>
+          <li>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="449">
+                <path
+                  fill="#F1F5FE"
+                  fill-rule="evenodd"
+                  d="M0 0h1440v449H191.5C85.737 449 0 363.263 0 257.5V0z"
+                />
+              </svg>
+            </div>
+            <p>100% data ownership</p>
+          </li>
+          <li>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="449">
+                <path
+                  fill="#F1F5FE"
+                  fill-rule="evenodd"
+                  d="M0 0h1440v449H191.5C85.737 449 0 363.263 0 257.5V0z"
+                />
+              </svg>
+            </div>
+            <p>Email reports</p>
+          </li>
+        </ul>
+      </section>
+      <button>Start my trial</button>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
