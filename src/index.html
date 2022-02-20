@@ -55,17 +55,46 @@
         </div>
       </div>
       <div id="hero-text" class="relative -top-56">
-        <h1 class="text-center text-xl mb-2">Simple, traffic-based pricing</h1>
-        <p class="text-center text-sm w-2/4 mx-auto">
+        <h1 class="text-center text-xl mb-1.5 text-dark-desaturated-blue">
+          Simple, traffic-based pricing
+        </h1>
+        <p
+          class="text-center text-sm w-2/4 mx-auto leading-6 text-grayish-blue"
+        >
           Sign-up for our 30-day trial. No credit card required.
         </p>
       </div>
     </hero>
-    <main class="px-6">
+    <main class="px-6 py-9 bg-yellow-300 rounded-lg">
       <section id="slider-container">
-        <h3>Pageviews</h3>
-        <div id="slider"></div>
-        <h1>$16/<span>month</span></h1>
+        <h3
+          class="uppercase text-center tracking-widest text-xs font-extrabold text-grayish-blue mb-7"
+        >
+          Pageviews
+        </h3>
+        <div id="slider" class="h-2 w-full bg-gray-200 rounded mb-7">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13">
+            <g fill="#80FFF3" fill-rule="evenodd">
+              <path
+                d="M16 2.558v7.884a1 1 0 001.735.679l3.639-3.943a1 1 0 000-1.356l-3.64-3.943A1 1 0 0016 2.558zM6 2.558v7.884a1 1 0 01-1.735.679L.626 7.178a1 1 0 010-1.356l3.64-3.943A1 1 0 016 2.558z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div
+          id="price-heading"
+          class="flex flex-row justify-center items-center gap-x-2"
+        >
+          <!-- why does inline display for h1 fix the flex layout here? -->
+          <h1
+            class="font-extrabold text-3xl text-dark-desaturated-blue tracking-tighter inline"
+          >
+            $16.00
+          </h1>
+          <p class="text-sm text-grayish-blue font-semibold align-middle">
+            / month
+          </p>
+        </div>
       </section>
       <section id="billing-container">
         <span>Monthly Billing</span>
