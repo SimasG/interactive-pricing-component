@@ -22,7 +22,7 @@
 
     <title>Interactive pricing component</title>
   </head>
-  <body class="bg-white font-body">
+  <body class="bg-white font-body overflow-hidden">
     <hero>
       <!-- Ideally, should be absolute instead of relative but then I had troubles positioning the content -->
       <!-- without manipulating the background svg together -->
@@ -65,14 +65,33 @@
         </p>
       </div>
     </hero>
-    <main class="px-6 py-9 bg-yellow-300 rounded-lg">
+    <main class="px-6 py-9 bg-yellow-300 rounded-lg mx-6">
       <section id="slider-container">
         <h3
-          class="uppercase text-center tracking-widest text-xs font-extrabold text-grayish-blue mb-7"
+          class="uppercase text-center tracking-thewidest text-xs font-extrabold text-grayish-blue mb-7"
         >
           Pageviews
         </h3>
-        <div id="slider" class="h-2 w-full bg-gray-200 rounded mb-7">
+        <div id="slider-subcontainer" class="mb-7">
+          <input
+            type="range"
+            min="10000"
+            max="1000000"
+            class="range-slider w-full"
+          />
+          <!-- <div
+            id="slider-selector"
+            class="h-24 w-12 absolute bottom-5 left-1/2 translate-x-2/4 z-10 range-slider"
+          >
+            <div
+              class="h-12 w-12 bg-icon-slider bg-cover bg-center rounded-full absolute bottom-0"
+            ></div>
+          </div> -->
+          <!-- <div id="slider-selector" class="range-slider">
+            <div
+              class="h-12 w-12 bg-slate-500 bg-cover bg-center rounded-full absolute bottom-0"
+            ></div>
+          </div> -->
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13">
             <g fill="#80FFF3" fill-rule="evenodd">
               <path
@@ -87,7 +106,7 @@
         >
           <!-- why does inline display for h1 fix the flex layout here? -->
           <h1
-            class="font-extrabold text-3xl text-dark-desaturated-blue tracking-tighter inline"
+            class="font-extrabold text-3xl text-dark-desaturated-blue tracking-tighter"
           >
             $16.00
           </h1>
@@ -98,7 +117,7 @@
       </section>
       <section id="billing-container">
         <span>Monthly Billing</span>
-        <button id="billing-button"></button>
+        <button id="billing-button">button</button>
         <span>Yearly Billing</span>
         <span> -25%</span>
         <span>25% discount</span>

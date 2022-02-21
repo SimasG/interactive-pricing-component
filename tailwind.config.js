@@ -13,6 +13,12 @@ module.exports = {
         "grayish-blue": "#858fad",
         "dark-desaturated-blue": "#293356",
       },
+      letterSpacing: {
+        thewidest: "0.2em",
+      },
+      backgroundImage: {
+        "icon-slider": "url('/images/icon-slider.svg')",
+      },
     },
   },
   plugins: [],
